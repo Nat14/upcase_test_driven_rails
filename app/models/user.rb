@@ -6,4 +6,8 @@ class User
   def todos
     @todos = Todo.where(email: @email)
   end
+
+  def sign_in?
+    @email.present?
+  end
 end
