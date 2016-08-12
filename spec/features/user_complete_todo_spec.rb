@@ -4,7 +4,7 @@ feature 'user completed todo' do
   scenario 'successfully' do
     sign_in
 
-    create_to 'Read a Book'
+    create_todo 'Read a Book'
 
     click_on 'Mark completed'
 
