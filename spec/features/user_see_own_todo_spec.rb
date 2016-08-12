@@ -9,6 +9,6 @@ feature 'user see own todo' do
     fill_in 'Title', with: 'Read a Book'
     click_on 'Submit'
 
-    expect(page).to have_css '.todos li', text: 'Read a Book'
+    expect(page).to display_todo 'Read a Book'
   end
 end
